@@ -1,0 +1,14 @@
+/app/csharp_project/bin/Release/net7.0/csharp_project
+/app/csharp_project/bin/Release/net7.0/csharp_project.deps.json
+/app/csharp_project/bin/Release/net7.0/csharp_project.runtimeconfig.json
+/app/csharp_project/bin/Release/net7.0/csharp_project.dll
+/app/csharp_project/bin/Release/net7.0/csharp_project.pdb
+/app/csharp_project/obj/Release/net7.0/csharp_project.GeneratedMSBuildEditorConfig.editorconfig
+/app/csharp_project/obj/Release/net7.0/csharp_project.AssemblyInfoInputs.cache
+/app/csharp_project/obj/Release/net7.0/csharp_project.AssemblyInfo.cs
+/app/csharp_project/obj/Release/net7.0/csharp_project.csproj.CoreCompileInputs.cache
+/app/csharp_project/obj/Release/net7.0/csharp_project.dll
+/app/csharp_project/obj/Release/net7.0/refint/csharp_project.dll
+/app/csharp_project/obj/Release/net7.0/csharp_project.pdb
+/app/csharp_project/obj/Release/net7.0/csharp_project.genruntimeconfig.cache
+/app/csharp_project/obj/Release/net7.0/ref/csharp_project.dll
