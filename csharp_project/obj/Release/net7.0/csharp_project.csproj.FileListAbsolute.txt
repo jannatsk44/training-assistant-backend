@@ -12,3 +12,11 @@
 /app/csharp_project/obj/Release/net7.0/csharp_project.pdb
 /app/csharp_project/obj/Release/net7.0/csharp_project.genruntimeconfig.cache
 /app/csharp_project/obj/Release/net7.0/ref/csharp_project.dll
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.AssemblyInfoInputs.cache
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.AssemblyInfo.cs
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.csproj.CoreCompileInputs.cache
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.sourcelink.json
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.dll
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\refint\csharp_project.dll
+E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.pdb

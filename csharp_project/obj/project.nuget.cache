@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HROFNqJwW5k/k6UQVZ+eYxVqXCrKQ9qSS3BcyR/VadQVGQ5zAJR3VFaIj9UpU4L8z5dQQM/no1ZlJO03UeqNcA==",
+  "dgSpecHash": "C9+3hjgSnpQ=",
   "success": true,
-  "projectFilePath": "/app/csharp_project/csharp_project.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\Projects\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KHANSAAD\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\KHANSAAD\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\KHANSAAD\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\KHANSAAD\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
