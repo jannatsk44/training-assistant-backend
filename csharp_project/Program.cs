@@ -1,1 +1,1 @@
-print(10,6,16,4)
+print("dfjskaljf)

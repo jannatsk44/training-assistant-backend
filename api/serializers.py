@@ -113,17 +113,20 @@ class LoginSerializer(serializers.Serializer):
             raise serializers.ValidationError('Invalid credentials')
         return data
 
-class TopicSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Topic
-        fields = ['name'] 
+# class TopicSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Topic
+#         fields = ['name'] 
 
 class QuestionSerializer(serializers.ModelSerializer):
-    topic = serializers.SerializerMethodField()
+    topic_name = serializers.CharField(source='topic.name', read_only=True)
+    topic = serializers.PrimaryKeyRelatedField(queryset=Topic.objects.all())
 
     class Meta:
         model = Question
-        fields = ['id', 'name', 'topic', 'description', 'difficulty', 'answer','companies']
+        fields = ['id', 'name', 'topic', 'topic_name', 'description', 'difficulty', 'answer', 'companies']
+
+
 
     def get_topic(self, obj):
         # Return the name of the topic directly

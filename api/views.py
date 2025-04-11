@@ -554,7 +554,7 @@ class ChatHistoryAPIView(APIView):
 class ChatAPIView(APIView):
     def post(self, request, *args, **kwargs):
         user = request.user
-        recent_chats = ChatHistory.objects.filter(user=user).order_by('-timestamp')[:10]  # last 10 messages
+        recent_chats = ChatHistory.objects.filter(user=user).order_by('-timestamp')[:1]  # last 10 messages
         context_messages = [[{"role": "user", "content": chat.message},{"role": "assistant", "content": chat.response}] for chat in recent_chats]
         print(context_messages)
         user_prompt = request.data.get('messages')
@@ -780,6 +780,8 @@ class UserPerformanceView(viewsets.ViewSet):
 
             user_data.append({
                 "username": user.user.username,
+                "firstname": user.user.first_name,
+                "lastname": user.user.last_name,
                 "active_time_today": user.active_time_today,
                 "total_problems_solved": user.total_problems_solved,
                 "activity_log": [
