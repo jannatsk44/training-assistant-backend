@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
+      "projectUniqueName": "D:\\django new project\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
       "projectName": "csharp_project",
-      "projectPath": "E:\\Projects\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
+      "projectPath": "D:\\django new project\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
       "packagesPath": "C:\\Users\\KHANSAAD\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\training-assistant-backend\\csharp_project\\obj\\",
+      "outputPath": "D:\\django new project\\training-assistant-backend\\csharp_project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
