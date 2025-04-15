@@ -9,3 +9,4 @@ media/
 myenv/
 .env
 *.log
+*.sqlite3/
