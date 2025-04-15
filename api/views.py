@@ -124,7 +124,6 @@ from django.utils.crypto import get_random_string
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import ValidationError
-from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
 from django.conf import settings
 from .models import OTP
@@ -363,7 +362,6 @@ import re
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
 from .serializers import CodeExecutionSerializer
 
 class RunCodeAPIView(APIView):
@@ -763,7 +761,6 @@ from collections import defaultdict
 from django.db.models import Count
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import IsAdminUser
 from .models import UserQuestionStatus
 
 class UserPerformanceView(viewsets.ViewSet):
@@ -851,3 +848,17 @@ class AdminUserPerformanceAPIView(APIView):
             "user_performance": list(user_performance.values())
         }
         return Response(response_data)
+
+
+class UniqueCompaniesAPIView(APIView):
+    def get(self, request):
+        # Fetch all companies from the Question model
+        questions = Question.objects.all()
+        all_companies = set()
+        for question in questions:
+            if question.companies:
+                companies = question.companies.split("  \n")  # Split by double spaces and newline
+                all_companies.update(companies)
+
+        # Return the unique companies sorted alphabetically
+        return Response(sorted(all_companies))
