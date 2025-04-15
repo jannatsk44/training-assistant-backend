@@ -24,7 +24,7 @@ urlpatterns = [
     path('upload-questions-csv/', CSVUploadView.as_view(), name='upload-questions-csv'),
     path('update-pic/', ProfilePicUpdateView.as_view(), name='profile-pic-update'),
     path('topics/', TopicListView.as_view(), name='topic-list'),
-    
+    path('unique-companies/', UniqueCompaniesAPIView.as_view(), name='unique-companies'),
 
     path('', include(router.urls)),  # Include all viewsets from router
 ]
