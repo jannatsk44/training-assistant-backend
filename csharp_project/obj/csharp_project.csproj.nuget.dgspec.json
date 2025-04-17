@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\django new project\\training-assistant-backend\\csharp_project\\csharp_project.csproj": {}
+    "E:\\Django project\\training-assistant-backend\\csharp_project\\csharp_project.csproj": {}
   },
   "projects": {
-    "D:\\django new project\\training-assistant-backend\\csharp_project\\csharp_project.csproj": {
+    "E:\\Django project\\training-assistant-backend\\csharp_project\\csharp_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\django new project\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
+        "projectUniqueName": "E:\\Django project\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
         "projectName": "csharp_project",
-        "projectPath": "D:\\django new project\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
+        "projectPath": "E:\\Django project\\training-assistant-backend\\csharp_project\\csharp_project.csproj",
         "packagesPath": "C:\\Users\\KHANSAAD\\.nuget\\packages\\",
-        "outputPath": "D:\\django new project\\training-assistant-backend\\csharp_project\\obj\\",
+        "outputPath": "E:\\Django project\\training-assistant-backend\\csharp_project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

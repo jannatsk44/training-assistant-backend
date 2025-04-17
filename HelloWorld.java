@@ -1,5 +1,5 @@
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Woof");
-    }
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Cannot divide by zero");
+    }
 }
