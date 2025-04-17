@@ -20,3 +20,11 @@ E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_
 E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.dll
 E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\refint\csharp_project.dll
 E:\Projects\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.pdb
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.GeneratedMSBuildEditorConfig.editorconfig
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.AssemblyInfoInputs.cache
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.AssemblyInfo.cs
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.csproj.CoreCompileInputs.cache
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.sourcelink.json
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.dll
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\refint\csharp_project.dll
+E:\Django project\training-assistant-backend\csharp_project\obj\Release\net7.0\csharp_project.pdb

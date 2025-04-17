@@ -797,21 +797,36 @@ class UserPerformanceView(viewsets.ViewSet):
 
         return Response(user_data)
 
+from collections import defaultdict
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
+from .models import UserQuestionStatus  # Adjust if the path is different
+
 class AdminUserPerformanceAPIView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request, format=None):
-        # Query all solved statuses and join with related User and Question.
+        # Fetch all solved statuses and include user and question
         solved_statuses = UserQuestionStatus.objects.filter(
             status='solved'
         ).select_related('user', 'question')
 
-        # Data structure to hold performance per user using user_id as key.
         user_performance = {}
+        # Keep track of which questions have been counted per user
+        counted_questions = defaultdict(set)
 
         for record in solved_statuses:
             user = record.user
-            # Initialize the user's performance entry if not already done.
+            question_id = record.question.id
+
+            # Skip if this question has already been counted for this user
+            if question_id in counted_questions[user.id]:
+                continue
+
+            counted_questions[user.id].add(question_id)
+
+            # Initialize user entry
             if user.id not in user_performance:
                 user_performance[user.id] = {
                     "username": user.username,
@@ -821,12 +836,9 @@ class AdminUserPerformanceAPIView(APIView):
                     "languages": {}
                 }
 
-            # Determine language (default to "unknown" if not provided)
             lang = (record.language or "unknown").lower()
-            # Determine difficulty (only count "easy", "medium", or "hard" per your sample)
             difficulty = (record.question.difficulty or "unknown").lower()
 
-            # Initialize language breakdown if needed.
             if lang not in user_performance[user.id]["languages"]:
                 user_performance[user.id]["languages"][lang] = {
                     "easy": 0,
@@ -835,19 +847,15 @@ class AdminUserPerformanceAPIView(APIView):
                     "total": 0
                 }
 
-            # Update the total count for this language and overall.
             user_performance[user.id]["languages"][lang]["total"] += 1
             user_performance[user.id]["total_problems_solved"] += 1
 
-            # Update the count for the difficulty if it is one we track.
             if difficulty in ["easy", "medium", "hard"]:
                 user_performance[user.id]["languages"][lang][difficulty] += 1
 
-        # Convert the performance dict into a list of values.
-        response_data = {
+        return Response({
             "user_performance": list(user_performance.values())
-        }
-        return Response(response_data)
+        })
 
 
 class UniqueCompaniesAPIView(APIView):
