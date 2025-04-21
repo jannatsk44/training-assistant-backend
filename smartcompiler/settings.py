@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-aqr8-lwzcso66*r-jr=3!g)fg#vq^ds_)a=j)^=@sbbapo^$4z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['compiler-backend.iqratechnology.com','75.119.128.244','127.0.0.1']
+ALLOWED_HOSTS = ['compiler-backend.iqratechnology.com','75.119.128.244','127.0.0.1','test-compiler-backend.iqratechnology.com']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtpout.secureserver.net'
@@ -115,7 +115,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000','https://aitrainingassistant.iqratechnology.com:9443','https://aitrainingassistant.iqratechnology.com','http://75.119.128.244:9443'  # Your frontend domain
+    'http://localhost:3000','https://aitrainingassistant.iqratechnology.com:9443','https://aitrainingassistant.iqratechnology.com','http://75.119.128.244:9443','http://75.119.128.244:3000','https://test-aitrainingassistant.iqratechnology.com:9444'  # Your frontend domain
 ]
 
 
