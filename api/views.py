@@ -154,6 +154,7 @@ class GenerateOTPView(APIView):
             recipient_list=[email],
             fail_silently=False,
 	    connection=email_connection, 
+     
 
         )
 

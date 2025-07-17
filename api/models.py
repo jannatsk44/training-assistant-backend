@@ -14,14 +14,18 @@ class UserActivityLog(models.Model):
     class Meta:
         unique_together = ('user', 'activity_date')
 
+from django.db import models
+from django.utils.timezone import now
+from datetime import timedelta
+
 class OTP(models.Model):
     email = models.EmailField(unique=True)
     otp = models.CharField(max_length=6)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def is_valid(self):
-        # OTP is valid for 5 minutes
         return now() <= self.created_at + timedelta(minutes=5)
+
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
