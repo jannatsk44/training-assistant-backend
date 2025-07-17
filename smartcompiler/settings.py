@@ -31,16 +31,28 @@ DEBUG = True
 ALLOWED_HOSTS = ['compiler-backend.iqratechnology.com','75.119.128.244','127.0.0.1','test-compiler-backend.iqratechnology.com']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtpout.secureserver.net'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-EMAIL_HOST_USER = 'training@iqratechnology.com'
-EMAIL_HOST_PASSWORD = 'Hello@iqra21'
+EMAIL_HOST_USER = 'iqratech7@gmail.com'
+EMAIL_HOST_PASSWORD = 'dhws hgub ruad kmyu'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
-# Application definition
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = False
+# EMAIL_HOST_USER = 'apikey'
+# EMAIL_HOST_PASSWORD = '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'
+# DEFAULT_FROM_EMAIL = 'training@iqratechnology.com'  # No typos, must match a verified sender
+
+
+# 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
+# # Application definition
 
 CACHES = {
     'default': {
