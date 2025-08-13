@@ -31,12 +31,12 @@ DEBUG = True
 ALLOWED_HOSTS = ['compiler-backend.iqratechnology.com','75.119.128.244','127.0.0.1','test-compiler-backend.iqratechnology.com']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtpout.secureserver.net'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-EMAIL_HOST_USER = 'iqratech7@gmail.com'
-EMAIL_HOST_PASSWORD = 'dhws hgub ruad kmyu'
+EMAIL_HOST_USER = 'training@iqratechnology.com'
+EMAIL_HOST_PASSWORD = 'Technology$1108'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
@@ -62,20 +62,20 @@ CACHES = {
 }
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'django.contrib.admin',  
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    'rest_framework',  
     'api',
     'rest_framework_simplejwt',
     'corsheaders',
     'django_otp',
     'django_otp.plugins.otp_totp',
     'django_otp.plugins.otp_hotp',
-    # 'django_q',
+    # 'django_q',                
     
 ]
 Q_CLUSTER = {
